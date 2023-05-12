@@ -1,6 +1,6 @@
-  @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
 * {
-    font-family: 'Bruno Ace SC', cursive;
+  font-family: "Bruno Ace SC", cursive;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -52,39 +52,35 @@ body {
   border: 5px;
   border: 5px solid white;
 }
-.box1:hover,
-.box2:hover,
-.box3:hover,
-.box4:hover,
-.box5:hover,
-.box6:hover,
-.box6:hover,
-.box7:hover,
-.box8:hover,
-.box9:hover{
-    background: rgba(255, 255, 255, 0.629);
-    color: black;
-} 
-.btn{
-    margin-top: 1%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.game_status,.replay_btn,.code_link{
-    font-size: 25px;
-    color: white;
-    margin: 1%;
-    padding: 20px;
-    background: rgba(246, 245, 245, 0.162);
-    border-radius: 10px;
-}
-.replay_btn,.code_link{
-    border: 3px solid white;
 
+.btn {
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.replay_btn:hover,.code_link:hover{
-    background: rgba(255, 255, 255, 0.629);
-    color: black;
+.game_status,
+.replay_btn,
+.code_link {
+  font-size: 25px;
+  color: white;
+  margin: 1%;
+  padding: 20px;
+  background: rgba(246, 245, 245, 0.162);
+  border-radius: 10px;
+}
+.game_status{
+  background: none;
+  
+}
+.replay_btn,
+.code_link {
+  font-weight: bolder;
+  border: 3px solid white;
+}
+.replay_btn:hover,
+.code_link:hover {
+  background: rgba(255, 255, 255, 0.629);
+  color: #4a0095;
 }
