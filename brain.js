@@ -11,7 +11,7 @@ function reset_game() {
     // Add click eventlistener on replay button
 
     reset.addEventListener("click", function () {
-        
+
         //set game_over ,player_turn and game_status to its default values
 
         gamer_over = false;
@@ -51,7 +51,7 @@ function checkWin() {
         //  check if con1 ,con2 and con3 are equal or not and check if they are not empty
         //  then we set game_over to true and change style attributes accordingly
         //  set winner_player to con1 if above condition is true
-        
+
         if (((con1 === con2) && (con2 === con3)) && (con1 !== "")) {
             gamer_over = true;
             box_input[element[0]].setAttribute("style", "  background: rgba(255, 255, 255, 0.629);color: #4a0095;");
@@ -62,5 +62,37 @@ function checkWin() {
         }
     });
 }
+
+// set start_game function
+
+function start_game() {
+
+    // In for of loop we select all elements from the box_input array and then add click eventListeners to each element.\
+
+    for (element of box_input) {
+        element.addEventListener("click", (e) => {
+
+            // At these time we check if the element is empty or not .If it is empty then we set innerText to player_turn
+            // And The check if game is over or not over. If it is not then we set game_status innerText to next player_turn after swapping it otherwise we set game_status to declared the winner in the game 
+
+            if (e.target.innerText === "") {
+                e.target.innerText = player_turn;
+                swap_player_turn();
+                checkWin();
+                if (!gamer_over) {
+                    game_status.innerText = "Player " + player_turn + " turn !!!";
+                }
+                else {
+                    game_status.innerText = "Player " + winner_player + " wins !!!";
+                }
+            }
+        });
+    }
+}
+
+// In these first winners player is declared furhter player game status not updated in game_status.innerText 
+
+start_game();
+reset_game();
 
 
