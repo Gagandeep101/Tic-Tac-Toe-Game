@@ -33,3 +33,34 @@ function swap_player_turn() {
     player_turn = player_turn === "0" ? "X" : "0";
 }
 
+// check who win the game
+
+function checkWin() {
+
+    // It is wining position at which one player can won the game
+
+    var win_condition = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
+
+    // In these we take three elements from box_input according to the win_condition from mini array in every iteration
+
+    win_condition.forEach(element => {
+        var con1 = box_input[element[0]].innerText;
+        var con2 = box_input[element[1]].innerText;
+        var con3 = box_input[element[2]].innerText;
+
+        //  check if con1 ,con2 and con3 are equal or not and check if they are not empty
+        //  then we set game_over to true and change style attributes accordingly
+        //  set winner_player to con1 if above condition is true
+        
+        if (((con1 === con2) && (con2 === con3)) && (con1 !== "")) {
+            gamer_over = true;
+            box_input[element[0]].setAttribute("style", "  background: rgba(255, 255, 255, 0.629);color: #4a0095;");
+            box_input[element[1]].setAttribute("style", "  background: rgba(255, 255, 255, 0.629); color: #4a0095;");
+            box_input[element[2]].setAttribute("style", "  background: rgba(255, 255, 255, 0.629);  color: #4a0095;");
+            winner_player = con1;
+            return;
+        }
+    });
+}
+
+
