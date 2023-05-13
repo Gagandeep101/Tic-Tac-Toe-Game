@@ -1,6 +1,6 @@
 <h1> <strong> Tic Tac Toe Game <strong> </h1>
 <p> Simple tic tac toe game is created using html ,css and javascript.</p>
-<p>To visit the tic tac toe game <a href="/">click here</a> </p>
+<p>To visit the tic tac toe game <a href="https://tic-tac-toe-game-101.netlify.app/">click here</a> </p>
 <h2><strong><u>Game Rule</u></strong></h2><br>
 <ol>
     <li> Two player "X" or "0" take turn to play game and swap it turns after one player play a game</li><br>
