@@ -70,9 +70,8 @@ body {
   background: rgba(246, 245, 245, 0.162);
   border-radius: 10px;
 }
-.game_status{
+.game_status {
   background: none;
-  
 }
 .replay_btn,
 .code_link {
