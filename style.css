@@ -31,16 +31,7 @@ body {
   column-gap: 15px;
   row-gap: 15px;
 }
-.box1,
-.box2,
-.box3,
-.box4,
-.box5,
-.box6,
-.box6,
-.box7,
-.box8,
-.box9 {
+.box {
   background: rgba(246, 245, 245, 0.162);
   font-size: 70px;
   display: flex;
@@ -93,16 +84,7 @@ body {
     column-gap: 8px;
     row-gap: 8px;
   }
-  .box1,
-  .box2,
-  .box3,
-  .box4,
-  .box5,
-  .box6,
-  .box6,
-  .box7,
-  .box8,
-  .box9 {
+  .box{
     font-size: 50px;
     height: 60px;
     width: 60px;
