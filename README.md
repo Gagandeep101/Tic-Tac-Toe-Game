@@ -5,9 +5,9 @@
 <ol>
     <li> Two player "X" or "0" take turn to play game and swap it turns after one player play a game</li><br>
     <li>At beginiing or after reset game the game start with first "X" player </li><br>
-    <li>To win the game player fill the three boxes in vertical direction,horizontal direction and diagonal direction </li>
-        <li>If no one win then we draw the game  </li>
-        <li>After one player win the  game stop here and restart after using restart btn</li>
+    <li>To win the game player fill the three boxes in vertical direction,horizontal direction and diagonal direction </li><br>
+        <li>If no one win then we draw the game  </li><br>
+        <li>After one player win the  game stop here and restart after using restart btn</li><br>
 </ol><br><br>
 
 
