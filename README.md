@@ -8,4 +8,5 @@
     <li>To win the game player fill the three boxes in vertical direction,horizontal direction and diagonal direction </li>
 </ol><br><br>
 
-![chrome-capture-2023-4-13](https://github.com/Gagandeep101/Tic-Tac-Toe-Game/assets/112372818/d0efa048-61d5-4a75-bdfc-fea221b1707b)
+
+![chrome-capture-2023-4-13](https://github.com/Gagandeep101/Tic-Tac-Toe-Game/assets/112372818/b4cb45e0-c049-41b0-8b4d-65bcd2a4b60f)
